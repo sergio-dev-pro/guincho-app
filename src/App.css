@@ -1,0 +1,140 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FUNDO */
+body {
+  min-height: 100dvh;
+  font-family: "Inter", Arial, sans-serif;
+  background: #f7efef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  color: #fff;
+}
+
+/* CONTAINER RESPONSIVO */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #fff;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* TÍTULO */
+h1 {
+  text-align: center;
+  color: #3f3f3f;
+  margin-bottom: 16px;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+}
+
+/* FORM RESPONSIVO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: solid 1px #000;
+  font-size: 0.95rem;
+}
+
+/* BOTÃO */
+form button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #ff9f43;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* LISTA */
+ul {
+  list-style: none;
+}
+
+/* ITEM RESPONSIVO */
+li {
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #3f3f3f;
+}
+
+/* LINHA SUPERIOR */
+li span {
+  cursor: pointer;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+/* AÇÕES */
+li div {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+/* BOTÕES */
+li button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ESTADOS */
+li.done span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* CORES */
+li button:first-child {
+  background: #1dd1a1;
+}
+
+li button:last-child {
+  background: #ee5253;
+}
+
+/* DESKTOP: AJUSTE FINO */
+@media (min-width: 480px) {
+  li {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  li span {
+    flex: 1;
+  }
+
+  li div {
+    flex: none;
+  }
+}
+/*  */
+
